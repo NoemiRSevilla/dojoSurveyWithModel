@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Submitted";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@using dojoSurveyWithModel.Models
+@model Survey
+
+<body>
+    <h1>Show Page</h1>
+    <h3>Info Submitted:</h3>
+    <p>Full Name: @Model.name</p>
+    <p>Dojo Location: @Model.dojo_location</<p>
+    <p>Favorite Language: @Model.favorite_language</p>
+    <p>Comments: @Model.comments </p>
+
+</body>
+
+</html>
